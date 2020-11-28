@@ -1,0 +1,75 @@
+.App-header {
+  background-color: #282c34;
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  justify-content: center;
+  color: white;
+  margin-top: 1rem;
+}
+
+.App-header > h1 {
+  text-align: center;
+}
+
+.App-header > h2 {
+  margin: auto;
+  cursor: pointer;
+}
+
+.Modal {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  overflow: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.Modal-Content {
+  border-radius: 5px;
+  z-index: 2;
+  background: #fff no-repeat center;
+  background-size: contain;
+  margin: auto;
+  padding: 0.5rem 2rem;
+  position: relative;
+}
+
+.Modal-Content > label {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  cursor: pointer;
+}
+
+.button {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.list {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0.5rem 1rem;
+  padding: 0.3rem;
+}
+
+.list.complete {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.list > div:first-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.list > div > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
